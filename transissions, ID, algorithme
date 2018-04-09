@@ -7,3 +7,12 @@ Algorithme général de transmission d'une trame:
   Début émission LoRa
   Fin émission LoRa
 
+Le format de la trame:
+  C'est une trame_t le type de structure
+  La variabe et trame
+  
+ Les trois fonctions pour communiquer sont:
+    LoRa.beginPacket(false);
+    LoRa.write( (uint8_t*)&Trame, sizeof(Trame));
+    LoRa.endPacket();  
+
