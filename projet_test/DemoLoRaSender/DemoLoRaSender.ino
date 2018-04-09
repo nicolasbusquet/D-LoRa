@@ -13,10 +13,10 @@ void setup(){
 }//setup()
 
 void loop() {
-    Serial.print("Envoi du message \"Equipe Prof"); Serial.println("\"");
+    Serial.print("Envoi du message \"Equipe D"); Serial.println("\"");
     //----- Début émission LoRa --------
     LoRa.beginPacket();
-    LoRa.print("Equipe Prof");
+    LoRa.print("Equipe D");
     LoRa.endPacket();
     //----- Fin émission LoRa --------
     delay(3000);

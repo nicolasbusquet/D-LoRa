@@ -1,0 +1,18 @@
+Les autres banes de fréquence poible sont 915MHZ et 433MHZ.
+les transmissions reçues sont visibles dans l'équipe D.
+L'ID de l'équipe est D
+
+Algorithme général de transmission d'une trame:
+  Initialiser le shiel
+  Début émission LoRa
+  Fin émission LoRa
+
+Le format de la trame:
+  C'est une trame_t le type de structure
+  La variabe et trame
+  
+ Les trois fonctions pour communiquer sont:
+    LoRa.beginPacket(false);
+    LoRa.write( (uint8_t*)&Trame, sizeof(Trame));
+    LoRa.endPacket();  
+
