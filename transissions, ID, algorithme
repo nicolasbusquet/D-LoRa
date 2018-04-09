@@ -15,4 +15,7 @@ Le format de la trame:
     LoRa.beginPacket(false);
     LoRa.write( (uint8_t*)&Trame, sizeof(Trame));
     LoRa.endPacket();  
+    
+    
+    On accéde au champ de la trame en accédant à une case du tableau de char de la structure  trame_t
 
