@@ -16,6 +16,10 @@ Le format de la trame:
     LoRa.write( (uint8_t*)&Trame, sizeof(Trame));
     LoRa.endPacket();  
     
-    
-    On accéde au champ de la trame en accédant à une case du tableau de char de la structure  trame_t
+ Comment accéder au champs de la trame
+  On accéde au champ de la trame en accédant à une case du tableau de char de la structure  trame_t
 
+Stratégie pour gérer les collision
+    -Tous le monde peut parler mais si 2 personnes parlent elles attendent tous deux un temps aléatoire(différent pour les deux)
+      avant de répéter leurs phrases.
+    -L'éméteur attend que le récepteur autorise à parler.
