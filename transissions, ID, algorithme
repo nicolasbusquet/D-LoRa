@@ -1,0 +1,9 @@
+Les autres banes de fréquence poible sont les bande étroite, la bande passante et l'étalement de spectre.
+les transmissions reçues sont visibles dans l'équipe D.
+L'ID de l'équipe est D
+
+Algorithme général de transmission d'une trame:
+  Initialiser le shiel
+  Début émission LoRa
+  Fin émission LoRa
+
