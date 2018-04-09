@@ -30,7 +30,7 @@ void setup(){
  * BOUCLE DE TRAITEMENT
  */
 void loop() {
-  static byte N=0;
+  static uint16_t N=0;
   trame_t Trame = {0};
 
   Serial.print("Envoi du message \"N="); Serial.print(N); Serial.println("\"");
@@ -54,6 +54,6 @@ void loop() {
   LoRa.write( (uint8_t*)&Trame, sizeof(Trame));
   LoRa.endPacket();  
   //----- Fin émission LoRa --------
-  N++;
+  N--;
   delay(5000);
 }//loop()
