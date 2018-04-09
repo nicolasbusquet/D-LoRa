@@ -34,7 +34,11 @@ void loop() {
   trame_t Trame = {0};
 
   Serial.print("Envoi du message \"N="); Serial.print(N); Serial.println("\"");
+<<<<<<< HEAD
   Trame.id = 0x44; // n° d'identification de l'émetteur
+=======
+  Trame.id = 'D'; // n° d'identification de l'émetteur
+>>>>>>> c3307213cca98767bc33a92c7d82932f06ab0eb2
   Trame.ts = 0x00; // n° unique de message
   Trame.data[0] = 'N';
   Trame.data[1] = '=';
