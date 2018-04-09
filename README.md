@@ -1,5 +1,4 @@
 # LoRaDemo
-
-Fichiers du TP KRL19
+DAVION - ALIBERT - BLANC - BUSQUET
 
 Une mise en oeuvre du shield LoRa de Dragino 
