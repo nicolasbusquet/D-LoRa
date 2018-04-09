@@ -42,11 +42,11 @@ void loop() {
   Trame.ts = 0x00; // n° unique de message
   Trame.data[0] = 'N';
   Trame.data[1] = '=';
-  Trame.data[2] = '0'+ (N/100)%10;
-  Trame.data[3] = '0'+ (N/10 )%10;
-  Trame.data[4] = '0'+ (N/1  )%10;
-  //Trame.data[5] =
-  //Trame.data[6] =
+  Trame.data[2] = '0'+ (N/10000)%10;
+  Trame.data[3] = '0'+ (N/1000)%10;
+  Trame.data[4] = '0'+ (N/100)%10;
+  Trame.data[5] ='0'+ (N/10)%10;
+  Trame.data[6] = '0'+ (N/1)%10;
   //Trame.data[7] =
   
   //----- Début émission LoRa --------
